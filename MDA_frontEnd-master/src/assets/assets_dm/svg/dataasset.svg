@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg t="1575455523107" class="icon" viewBox="0 0 1047 1024" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" p-id="7416" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="204.4921875" height="200">
+    <defs>
+        <style type="text/css">@font-face { font-weight: 400; font-style: normal; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2") format("woff2"); }
+@font-face { font-weight: 400; font-style: italic; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2") format("woff2"); }
+@font-face { font-weight: 500; font-style: normal; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2") format("woff2"); }
+@font-face { font-weight: 500; font-style: italic; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2") format("woff2"); }
+@font-face { font-weight: 700; font-style: normal; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2") format("woff2"); }
+@font-face { font-weight: 700; font-style: italic; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2") format("woff2"); }
+@font-face { font-weight: 900; font-style: normal; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2") format("woff2"); }
+@font-face { font-weight: 900; font-style: italic; font-family: Inter-Loom; src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2") format("woff2"); }
+        </style>
+    </defs>
+    <path d="M34.3963 306.94L484.7503 501.617a86.307 86.307 0 0 0 34.392 5.84 84.36 84.36 0 0 0 35.691-7.787l454.246-202.463a57.754 57.754 0 0 0 0-105.775L554.8323 7.787a82.413 82.413 0 0 0-68.786 0L31.8003 202.464A57.105 57.105 0 0 0 0.0033 253.08a58.403 58.403 0 0 0 34.393 53.86zM512.6523 64.892a17.52 17.52 0 0 1 16.872 0L965.6003 242.697 528.8753 437.374a19.468 19.468 0 0 1-16.872 0L75.2783 253.729z m490.586 686.56a30.5 30.5 0 0 0-11.032 0l-463.33 205.709a18.819 18.819 0 0 1-17.522 0L48.0243 762.484a42.829 42.829 0 0 0-9.734 0 30.5 30.5 0 0 0-9.734 59.052l459.437 194.677a80.466 80.466 0 0 0 34.393 7.787 75.924 75.924 0 0 0 31.797-7.138l460.086-202.464a31.148 31.148 0 0 0 20.117-28.553 30.5 30.5 0 0 0-31.148-34.393z" p-id="7417"></path>
+    <path d="M1007.7803 475.011a29.85 29.85 0 0 0-13.627 0l-469.82 212.847a19.468 19.468 0 0 1-16.872 0L46.7263 478.905h-12.33A30.5 30.5 0 0 0 0.0033 506.16a29.85 29.85 0 0 0 16.223 26.606l465.278 210.25a80.466 80.466 0 0 0 34.393 7.788 72.03 72.03 0 0 0 32.446-7.788l471.767-210.25a29.85 29.85 0 0 0 18.17-27.255 31.148 31.148 0 0 0-30.5-30.5z" p-id="7418"></path>
+</svg>

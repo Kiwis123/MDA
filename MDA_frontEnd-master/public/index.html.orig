@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>bdp_frontend</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css" rel="stylesheet">
+
+  <!-- iconfont -->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_876201_bezjqloc0c.css">
+  <!-- tc's iconfont ， 前缀更改 icon -> icontc-->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1588439_x7ekxio4oli.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-codemirror@4.0.0/dist/vue-codemirror.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/mode/sql/sql.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/mode/clike/clike.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/addon/selection/active-line.min.js"></script>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      min-width: 1200px;
+      font-family: Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <noscript>
+    <strong>We're sorry but bdp_frontend doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript> -->
+  <div id="app"></div>
+</body>
+
+</html>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/addon/merge/merge.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/theme/monokai.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/eclipse.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/base16-dark.min.css" rel="stylesheet">
+<<<<<<< HEAD
+=======
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/isotope.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/solarized.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/idea.min.css" />
+>>>>>>> c102f2227284a150d22fcb02e9556bd9078d0202
