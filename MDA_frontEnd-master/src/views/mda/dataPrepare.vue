@@ -674,8 +674,7 @@
                 let that = this;
                 let params = new URLSearchParams();
                 params.append("id", this.modelId);
-                axios
-                    .post("http://localhost:6993/deleteDataSource", params)
+                axios.post("http://localhost:6993/deleteDataSource", params)
                     .then(function (response) {
                         if (response.data.result == true) {
                             that.$message.success("删除成功");
@@ -695,39 +694,37 @@
                 let dropArea2 = document.getElementsByClassName("col2")[0];
                 this.dragElement = document.getElementsByName("tableDiv")[0];
                 let that = this;
-                axios
-                    .get("http://localhost:6993/getModelDesc",
-                        {
-                            params: {
-                                modelId: row.id,
-                            }
-                        },
-                    )
-                    .then(function (response) {
-                        let factTableAndLookupTables = response.data.datum;
-                        console.log(factTableAndLookupTables);
-                        let factTable = factTableAndLookupTables.factTable;
-                        let lookupTables = factTableAndLookupTables.lookupTables;
-                        // 画factTable
-                        that.dragElement.id = factTable;
-                        that.factTable = factTable;
-                        that.setStyleOfDragElement();
-                        that.dragElement.style.lineHeight = "40px";
-                        that.dragElement.style.margin = "100px";
-                        let dragElementTemp = that.dragElement.cloneNode(true);
-                        dragElementTemp.childNodes[1].innerText = " " + factTable;
-                        dropArea1.appendChild(dragElementTemp);
-                        that.makeSourceElement(dragElementTemp);
-                        // 画lookupTables
-                        that.dragElement.style.margin = "15px";
-                        for (let i = 0; i < lookupTables.length; i++) {
-                            that.dragElement.id = lookupTables[i];
-                            let dragElementTemp1 = that.dragElement.cloneNode(true);
-                            dragElementTemp1.childNodes[1].innerText = " " + lookupTables[i];
-                            dropArea2.appendChild(dragElementTemp1);
-                            that.makeTargetElement(dragElementTemp1);
+                axios.get("http://localhost:6993/getModelDesc",
+                    {
+                        params: {
+                            modelId: row.id,
                         }
-                    });
+                    },
+                ).then(function (response) {
+                    let factTableAndLookupTables = response.data.datum;
+                    console.log(factTableAndLookupTables);
+                    let factTable = factTableAndLookupTables.factTable;
+                    let lookupTables = factTableAndLookupTables.lookupTables;
+                    // 画factTable
+                    that.dragElement.id = factTable;
+                    that.factTable = factTable;
+                    that.setStyleOfDragElement();
+                    that.dragElement.style.lineHeight = "40px";
+                    that.dragElement.style.margin = "100px";
+                    let dragElementTemp = that.dragElement.cloneNode(true);
+                    dragElementTemp.childNodes[1].innerText = " " + factTable;
+                    dropArea1.appendChild(dragElementTemp);
+                    that.makeSourceElement(dragElementTemp);
+                    // 画lookupTables
+                    that.dragElement.style.margin = "15px";
+                    for (let i = 0; i < lookupTables.length; i++) {
+                        that.dragElement.id = lookupTables[i];
+                        let dragElementTemp1 = that.dragElement.cloneNode(true);
+                        dragElementTemp1.childNodes[1].innerText = " " + lookupTables[i];
+                        dropArea2.appendChild(dragElementTemp1);
+                        that.makeTargetElement(dragElementTemp1);
+                    }
+                });
 
                 console.log("开始预览~~");
                 this.previewLoading = true;

@@ -87,6 +87,7 @@
 <script>
 /*eslint-disable */
 import { Row, Col, Icon, Spin } from 'ant-design-vue'
+import {Message} from "element-ui";
 import ProjectCard from '../../components/dev/ProjectCard'
 export default {
   components: {
@@ -193,23 +194,24 @@ export default {
     },
     deleteNameSpace(id) {
       var that = this;
-      this.$confirm({
-        title: '项目被删除后不可恢复，确定删除？',
-        onOk() {
-          that.axios.delete("http://localhost:6993/deleteProject?id=" + id).then(res => {
-            if (res.status == 200) {
-              that.getNameSpaces()
-              that.$message.success('删除成功')
-            } else {
-              that.$message.error('删除失败')
-            }
-          }).catch(err => {
+      this.$confirm('此操作将永久删除该项目，是否继续？', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        that.axios.delete("http://localhost:6993/deleteProject?id=" + id).then(res => {
+          if (res.status == 200) {
+            that.$message.success('删除成功')
+            that.getNameSpaces()
+          } else {
             that.$message.error('删除失败')
-          })
-        },
-        cancelText: '取消',
-        okText: '确定',
-      })
+          }
+        }).catch(err => {
+          that.$message.error('删除失败')
+        })
+      }).catch(() => {
+        Message.info('删除已取消');
+      });
     },
     openModalUpdate(namespace) {
       this.update_namespace.id = namespace.id

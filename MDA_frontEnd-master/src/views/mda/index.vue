@@ -55,25 +55,25 @@
             <a-icon :component="buildSvg" />
             <span>手动构建Cube</span>
           </a-menu-item>
-            <a-menu-item key="jobList">
-                <a-icon :component="jobSvg" />
-                <span>构建任务列表</span>
-            </a-menu-item>
+          <a-menu-item key="jobList">
+            <a-icon :component="jobSvg" />
+            <span>构建任务列表</span>
+          </a-menu-item>
         </a-sub-menu>
-          <a-sub-menu key="sub2">
+        <a-sub-menu key="sub2">
           <span slot="title">
             <a-icon :component="optimizeSvg" />
             <span>多维查询优化</span>
           </span>
-              <a-menu-item key="dashBoard">
-                  <a-icon :component="dashboardSvg" />
-                  <span>查询引擎概览</span>
-              </a-menu-item>
-              <a-menu-item key="optimizeSetting">
-                  <a-icon :component="setSvg" />
-                  <span>Cube优化设置</span>
-              </a-menu-item>
-          </a-sub-menu>
+          <a-menu-item key="dashBoard">
+            <a-icon :component="dashboardSvg" />
+            <span>查询引擎概览</span>
+          </a-menu-item>
+          <a-menu-item key="optimizeSetting">
+            <a-icon :component="setSvg" />
+            <span>Cube优化设置</span>
+          </a-menu-item>
+        </a-sub-menu>
         <a-menu-item key="dataView">
           <a-icon :component="relationSvg" />
           <span>数据表关联视图</span>
@@ -126,14 +126,14 @@ export default {
       currentPath: this.$route.name,
     };
   },
-    created(){
-      console.log(this.currentPath.split('/')[2]);
-    },
-    watch:{
-      $route(to, from){
-          this.currentPath = to.name;
-        }
-    },
+  created(){
+    console.log(this.currentPath.split('/')[2]);
+  },
+  watch:{
+    $route(to, from){
+        this.currentPath = to.name;
+      }
+  },
   methods: {
     onSearch(value) {
       console.log(value);
